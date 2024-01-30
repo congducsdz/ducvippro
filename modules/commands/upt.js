@@ -49,7 +49,12 @@ moment.tz('Asia/Ho_Chi_Minh').format('dddd');
       msg.push(`${i++}. ${name}`);
     }
     }
-    api.sendMessage(`đŸ“Œ ${thu} ${moment().tz('Asia/Ho_Chi_Minh').format('DD/MM/YYYY')} ${gio}\nâ¤ï¸ Bot name: ${global.config.BOTNAME}\nâ¡ï¸ Ping: ${Date.now() - timeStart}ms\nđŸ“‚ Lá»‡nh cĂ²n sá»‘ng: ${client.commands.size}\nâ°ï¸ Time onl: ${hours} giờ ${minutes} phút ${seconds} giây`,event.threadID, event.messageID);
+    api.sendMessage(`====『 𝐂𝐨𝐧𝐠𝐃𝐮𝐜 』====
+▱▱▱▱▱▱▱▱▱▱▱▱▱
+⇾ᴛêɴ ʙᴏᴛ: ${global.config.BOTNAME}
+→тнờι gιan onl : ${hours} giờ ${minutes} phút ${seconds} giây
+→𝑃𝑖𝑛𝑔: ${Date.now() - timeStart}ms
+▱▱▱▱▱▱▱▱▱▱▱▱▱`,event.threadID, event.messageID);
   }
 };
 module.exports.run = () => {};
