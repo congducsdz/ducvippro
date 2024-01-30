@@ -81,7 +81,7 @@ module.exports.run = async function({
       for (const {
           commandCategory,
           commandsName
-      } of data) txt += `│→ ${++count}. ${commandCategory} | tổng lệnh ${commandsName.length} \n`;
+      } of data) txt += `[⚡] ${++count}. ${commandCategory} | tổng lệnh ${commandsName.length} \n`;
       txt += `Tổng: ${global.client.commands.size} lệnh\n▱▱▱▱▱▱▱▱▱▱▱▱▱\n🍁 Reply từ 1 đến ${data.length} để chọn\n🍁 Gỡ tự động sau: 45 giây\n▱▱▱▱▱▱▱▱▱▱▱▱▱`;
       const msg = sendAttachments.status ? {
           body: txt}: txt;
