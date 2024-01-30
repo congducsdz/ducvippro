@@ -4,8 +4,8 @@ module.exports.config = {
   hasPermssion: 2,
   credits: "dtai", //bá»‘ m Ä‘Ă£ bá» cĂ´ng ra ngá»“i lĂ m thĂ¬ Ä‘á»«ng cĂ³ Ä‘á»•i credits
   description: "no prefix",
-  commandCategory: "Há»‡ thá»‘ng",
-  usages: "xem thá»i gian bot onl",
+  commandCategory: "thời gian onl",
+  usages: "xem thời gian bot onl",
     cooldowns: 5
 };
 module.exports.handleEvent = async ({ api, event, Users, Threads }) => { 
@@ -49,7 +49,7 @@ moment.tz('Asia/Ho_Chi_Minh').format('dddd');
       msg.push(`${i++}. ${name}`);
     }
     }
-    api.sendMessage(`đŸ“Œ ${thu} ${moment().tz('Asia/Ho_Chi_Minh').format('DD/MM/YYYY')} ${gio}\nâ¤ï¸ Bot name: ${global.config.BOTNAME}\nâ¡ï¸ Ping: ${Date.now() - timeStart}ms\nđŸ“‚ Lá»‡nh cĂ²n sá»‘ng: ${client.commands.size}\nâ°ï¸ Time onl: ${hours} giá» ${minutes} phĂºt ${seconds} giĂ¢y`,event.threadID, event.messageID);
+    api.sendMessage(`đŸ“Œ ${thu} ${moment().tz('Asia/Ho_Chi_Minh').format('DD/MM/YYYY')} ${gio}\nâ¤ï¸ Bot name: ${global.config.BOTNAME}\nâ¡ï¸ Ping: ${Date.now() - timeStart}ms\nđŸ“‚ Lá»‡nh cĂ²n sá»‘ng: ${client.commands.size}\nâ°ï¸ Time onl: ${hours} giờ ${minutes} phút ${seconds} giây`,event.threadID, event.messageID);
   }
 };
 module.exports.run = () => {};
