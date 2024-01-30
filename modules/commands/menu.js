@@ -76,13 +76,13 @@ module.exports.run = async function({
       };
   } else {
       const data = commandsGroup();
-      var txt = '======[ Menu ]======\n\n',
+      var txt = '======『 𝙼𝙴𝙽𝚄 』======\n▱▱▱▱▱▱▱▱▱▱▱▱▱\n',
       count = 0;
       for (const {
           commandCategory,
           commandsName
       } of data) txt += `│→ ${++count}. ${commandCategory} | tổng lệnh ${commandsName.length} \n`;
-      txt += `Tổng: ${global.client.commands.size} lệnh\n│→ Reply từ 1 đến ${data.length} để chọn\n│→ Gỡ tự động sau: 45 giây`;
+      txt += `Tổng: ${global.client.commands.size} lệnh\n▱▱▱▱▱▱▱▱▱▱▱▱▱\n🍁 Reply từ 1 đến ${data.length} để chọn\n🍁 Gỡ tự động sau: 45 giây\n▱▱▱▱▱▱▱▱▱▱▱▱▱`;
       const msg = sendAttachments.status ? {
           body: txt}: txt;
       send(msg, tid, (a, b) => {
