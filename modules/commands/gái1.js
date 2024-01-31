@@ -255,7 +255,7 @@ var link = [" https://i.imgur.com/edc6piy.mp4"'‚
 ""‚
 ""‚
  ];
-   var callback = () => api.sendMessage({ body:`Gái Nè Xem Đừng bắn Ahihi🍁\n \n「 𝗧𝗛𝗜́𝗡𝗛 」: ${gai[Math.floor(Math.random()*gai.length)]}`, attachment: fs.createReadStream(__dirname + `/cache/sailenh.jpg`)
+   var callback = () => api.sendMessage({ body:`Gái Nè Xem Đừng bắn Ahihi🍁\n \n「 𝗧𝗛𝗜́𝗡𝗛 」: ${gai[Math.floor(Math.random()*gai.length)]}`, attachment: fs.createReadStream(__dirname + `/cache/sailenh.mp4`)
 					}, event.threadID, () => fs.unlinkSync(__dirname + `/cache/sailenh.jpg`), event.messageID);  
-				return			request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/sailenh.jpg")).on("close",() => callback());
+				return			request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/sailenh.mp4")).on("close",() => callback());
    }; 
