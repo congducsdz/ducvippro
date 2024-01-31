@@ -1,12 +1,12 @@
 /** Đổi Credit ? Bọn t đã không mã hóa cho mà edit rồi thì tôn trọng nhau tý đi ¯\_(ツ)_/¯ **/
 module.exports.config = {
-  name: "\n",
+  name: "gái",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "Suhao mod lại by Tòn",
-  description: "Random ảnh gái khi dùng dấu lệnh",
-  commandCategory: "Hình ảnh",
-  usages: "ig",
+  description: "Random video khi dùng lệnh gái",
+  commandCategory: "video gái",
+  usages: "mp4",
   cooldowns: 0,
   dependencies: {
     "request":"",
